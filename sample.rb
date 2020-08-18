@@ -1,7 +1,12 @@
-puts 1 + 2
-
-a = 'Hello, world!'
-puts a
-
-b = 'こんにちは'
-puts b
+puts 'Start.'
+module Greeter
+  def hello
+    'hello'
+  end
+end
+begin
+  greeter = Greeter.new
+rescue
+  puts '例外が発生したが、このまま続行する'
+end
+puts 'End.'
